@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 
 public class FightBehaviour : MonoBehaviour
@@ -19,6 +20,7 @@ public class FightBehaviour : MonoBehaviour
 				if (item != null)
 				{
 					item.GetComponent <HealthBehaviour> ().TakeHit (10f);
+					item.transform.DOJump ((transform.position + transform.parent.transform.forward) * force, force, 1, 1f);
 				}
 			}
 		}

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4045913723827040}
   - component: {fileID: 114388194119902182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FatEgregor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,8 @@ GameObject:
   - component: {fileID: 23945920949132644}
   - component: {fileID: 195926880932004854}
   - component: {fileID: 114126354058485688}
-  m_Layer: 0
+  - component: {fileID: 114633807861484102}
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +150,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwarmPrefab: {fileID: 1530753968104038, guid: 925fa175504694be28586ba5f8e6eeb3,
     type: 2}
+--- !u!114 &114633807861484102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810067715288832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0072ca2bba09d4c1fa9ba8ae6db22eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 1000012909287652, guid: abb9f519b142e304d9c45b56afa768bc,
+    type: 2}
+  deathPrefab: {fileID: 1000010675638318, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c,
+    type: 2}
+  currentHealth: 100
 --- !u!195 &195926880932004854
 NavMeshAgent:
   m_ObjectHideFlags: 1

@@ -74,13 +74,14 @@ public class LandPackEgregor : MonoBehaviour
 		{
 			for (int i = 0; i < _agents.Length; i++)
 			{
-				if (_agents [i] != null)
+				if (_agents [i] != null && _agents [i].isOnNavMesh)
 				{
 					Vector3 newPosition = RandomCircle (_agents [i].transform.position, Random.Range (1.5f, 3f));
 					if (!_packTrigger.bounds.Contains (newPosition))
 					{
 						newPosition = _packTrigger.ClosestPoint (newPosition);
 					}
+					 
 					_agents [i].SetDestination (newPosition);
 				}
 
