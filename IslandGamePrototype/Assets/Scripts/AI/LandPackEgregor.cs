@@ -56,7 +56,7 @@ public class LandPackEgregor : MonoBehaviour
 		{
 			for (int i = 0; i < _agents.Length; i++)
 			{
-				if (_agents [i] != null && _agents [i].gameObject.activeInHierarchy)
+				if (_agents [i] != null && _agents [i].isOnNavMesh && _agents [i].gameObject.activeInHierarchy)
 				{
 					_agents [i].SetDestination (_player.transform.position);
 					_agents [i].GetComponent <Renderer> ().material = attackMaterial;
